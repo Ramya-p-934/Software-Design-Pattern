@@ -1,0 +1,105 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.signup-header {
+  width: 100%;
+  background-color: #ff5733;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  border: 2px solid #201f1f; /* Reduced border size */
+  overflow: hidden;
+  margin-top: 80px; /* Adjust this value to account for the fixed header */
+}
+
+.signup-form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%; /* Adjusted to 50% */
+  z-index: 2; /* Ensure the form is above the background image */
+  background-color: rgba(255, 255, 255, 0.85); /* Add some background color for better readability */
+  border-radius: 15px;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #0b0b1fdc; /* Changed button color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #c70039;
+}
+
+.signup-form p {
+  margin-top: 20px;
+  color: #777;
+  text-align: center;
+}
+
+.signup-image {
+  width: 50%; /* Adjusted to 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: url('../assets/pro\ 2.jpg') no-repeat center center; /* Use the background image */
+  background-size: cover;
+}
